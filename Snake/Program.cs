@@ -45,7 +45,7 @@ namespace Snake
                 }
 
                 Thread moverThread = new Thread(() => {
-                    Thread.Sleep(new Random().Next(1000, 5000));
+                    
                     lock (snake)
                     {
                         snake.mover(ref salir); 
